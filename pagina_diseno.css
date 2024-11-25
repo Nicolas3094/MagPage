@@ -1,0 +1,147 @@
+.margen-blanco {
+    display: flex;
+    margin: 50px;
+    padding: 20px; /* Espacio interno dentro del div */
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    border: 2px solid white;
+    box-sizing: content-box;
+    scale: 150%;
+}
+
+.logo > img{
+    padding: 0;
+    margin: 0;
+    width: 300px;
+} 
+
+.logo {
+  margin-bottom: 20px;    
+}
+
+a:link, a:visited {
+    color: white;
+}
+.titulo > h2 {
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.botones > button {
+    cursor: pointer; /* Cambia el cursor al estilo de clic */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+.parteDos {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.parteFoto {
+    margin-top: 60px;
+    margin-left: 15%;
+    width: 220px;
+    height: 220px;
+}
+
+.logoMag {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen se recorte bien si no es cuadrada */
+}
+
+.logan {
+    width: 300px;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.redesSociales > a {
+        cursor: pointer; /* Cambia el cursor al estilo de clic */
+}
+
+.redesSociales > a > img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo general del cuerpo */
+body {
+            
+    font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+}
+
+/* Para pantallas grandes (laptops y desktops) */
+@media (min-width: 1024px) {
+    .margen-blanco {
+        margin: 50px;
+        padding: 20px;
+        scale: 150%;
+    }
+}
+
+/* Para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .margen-blanco {
+        margin: 30px;
+        padding: 15px;
+        scale: 120%;
+    }
+    .botones > a {
+        font-size: 14px;
+    }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 767px) {
+    .margen-blanco {
+        margin: 10px;
+        padding: 10px;
+        scale: 100%;
+    }
+    .botones {
+        flex-direction: column; /* Asegura una disposición vertical */
+    }
+    .botones > a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .logo > img {
+        width: 80%; /* Ajuste para pantallas pequeñas */
+    }
+}
+
+        
