@@ -1,29 +1,33 @@
 .margen-blanco {
     display: flex;
     margin: 50px;
-    padding: 20px; /* Espacio interno dentro del div */
+    padding: 20px;
+    /* Espacio interno dentro del div */
     padding-left: 70px;
     padding-right: 70px;
-    border-radius: 5px; /* Bordes redondeados opcionales */
+    border-radius: 5px;
+    /* Bordes redondeados opcionales */
     border: 2px solid white;
     box-sizing: content-box;
     scale: 150%;
 }
 
-.logo > img{
+.logo>img {
     padding: 0;
     margin: 0;
     width: 300px;
-} 
+}
 
 .logo {
-  margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: white;
 }
-.titulo > h2 {
+
+.titulo>h2 {
     font-weight: 600;
     font-size: 10px;
     text-transform: uppercase;
@@ -37,8 +41,9 @@ a:link, a:visited {
 }
 
 
-.botones > button {
-    cursor: pointer; /* Cambia el cursor al estilo de clic */
+.botones>button {
+    cursor: pointer;
+    /* Cambia el cursor al estilo de clic */
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -46,7 +51,8 @@ a:link, a:visited {
     background-color: black;
     color: white;
     border: 2px solid white;
-    border-radius: 5px; /* Bordes redondeados opcionales */
+    border-radius: 5px;
+    /* Bordes redondeados opcionales */
 }
 
 .parteDos {
@@ -64,8 +70,10 @@ a:link, a:visited {
 .logoMag {
     height: 100%;
     width: 100%;
-    border-radius: 100%; /* Hace la imagen circular */
-    object-fit: cover; /* Asegura que la imagen se recorte bien si no es cuadrada */
+    border-radius: 100%;
+    /* Hace la imagen circular */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte bien si no es cuadrada */
 }
 
 .logan {
@@ -77,11 +85,12 @@ a:link, a:visited {
     flex-direction: column;
 }
 
-.redesSociales > a {
-        cursor: pointer; /* Cambia el cursor al estilo de clic */
+.redesSociales>a {
+    cursor: pointer;
+    /* Cambia el cursor al estilo de clic */
 }
 
-.redesSociales > a > img {
+.redesSociales>a>img {
     width: 1.5em;
     height: 1.5em;
     margin-bottom: 10px;
@@ -89,19 +98,19 @@ a:link, a:visited {
 
 /* Estilo general del cuerpo */
 body {
-            
+
     font-family: 'Plus Jakarta Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-weight: 400;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }
 
 /* Para pantallas grandes (laptops y desktops) */
@@ -120,7 +129,8 @@ body {
         padding: 15px;
         scale: 120%;
     }
-    .botones > a {
+
+    .botones>a {
         font-size: 14px;
     }
 }
@@ -128,20 +138,30 @@ body {
 /* Para teléfonos móviles */
 @media (max-width: 767px) {
     .margen-blanco {
+        flex-direction: column;
         margin: 10px;
         padding: 10px;
         scale: 100%;
     }
+
     .botones {
-        flex-direction: column; /* Asegura una disposición vertical */
+        flex-direction: column;
+        /* Asegura una disposición vertical */
     }
-    .botones > a {
+
+    .botones>a {
         font-size: 12px;
         padding: 10px;
     }
-    .logo > img {
-        width: 80%; /* Ajuste para pantallas pequeñas */
+
+    .logo>img {
+        width: 80%;
+        /* Ajuste para pantallas pequeñas */
+    }
+
+    .redesSociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
-
-        
